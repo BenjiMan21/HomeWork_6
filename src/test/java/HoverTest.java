@@ -15,7 +15,7 @@ public class HoverTest {
     }
 
     @Test
-    void hoverHomework () {
+    void hoverTest () {
         open("https://github.com");
         $$(".HeaderMenu-item").get(1).shouldHave(text("Solutions")).hover();
         $("html").$(byText("Enterprise")).click();
